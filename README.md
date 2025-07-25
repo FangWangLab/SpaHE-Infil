@@ -12,6 +12,7 @@ This pipeline consists of 4 main scripts and 2 supplementary scripts, designed t
  **01.SpatialAnno_auto.R**  
    - Automated spatial domain annotation  
    - Initial cell type identification
+   - This pipeline supports other annotation methods (including manual annotation) for integration into subsequent processes.
 
  **02.train_model-TMEadj.R**  
    - Train TME-adjusted classification model  
