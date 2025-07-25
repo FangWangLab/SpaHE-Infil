@@ -2,6 +2,8 @@
 
 SpaHE-Infil is a spatial analysis tool for the tumor microenvironment, enabling the reconstruction of spatial distributions of key cell types from routine HE-stained sections. It trains models using spatial transcriptomics data and constructs a multimodal predictive model by integrating nuclear-cytoplasmic morphology, texture features, and cell density from HE images. Its innovation lies in the introduction of a dynamic TME proportion calibration mechanism, capable of outputting parameter-adjustable visualization results, thus providing an effective tool for pathological diagnosis and tumor immunology research.
 
+<img width="727" height="727" alt="image" src="https://github.com/user-attachments/assets/eb2f58ca-7eb7-46c3-8ec9-51fb4d60c465" />
+
 ## Core Workflow
 
 This pipeline consists of 4 main scripts and 2 supplementary scripts, designed to be run in sequence:
