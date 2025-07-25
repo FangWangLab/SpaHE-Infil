@@ -55,6 +55,7 @@ This pipeline consists of 4 main scripts and 2 supplementary scripts, designed t
 - lubridate (1.9.4+)
 - readr (2.1.0+)
 - Required packages specified in individual scripts
+- Requirements for input H&E image quality: no less than 900×600 pixels, with a resolution of at least 300 dpi.
 
 ## Notes
 Refer to comments within each script for parameter configuration and detailed usage instructions.
