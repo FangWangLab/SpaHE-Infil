@@ -52,23 +52,23 @@ This pipeline consists of 4 main scripts and 2 supplementary scripts, designed t
    `Rscript 04.spa-HE evaluate Y-correction.R`
 
 ## Usage method
-**1.Spatial annotation**   
+1. Spatial annotation  
    `source("01.SpatialAnno_auto.R")`   
    `result <- SpatialAnno_auto( data.dir = data_directory, filename = data_filename)`
 
-**2. SpaHE-Infil train model**   
+2. SpaHE-Infil train model  
    `source("02.train_model-TMEadj.R")`   
    `model <- train_celltype_model(rds_files = sample_files, output_model = "celltype_model.rds",`
    `min_samples_per_type = 5, allow_unknown = TRUE, density_radius = 15,`
    `TME_adjust = FALSE/Calibration value)`
 
-**3. SpaHE-Infil predict model**   
+3. SpaHE-Infil predict model 
    `source("03.predict_celltypes-TMEadj.R")`   
    `predictions <- generate_predictions(he_image_path = "path/to/your/he_image.tif", model_path = "celltype_model.rds",`
    `output_prefix = "he_prediction_original_tme",`
    `TME_adjust = FALSE/Calibration value, step_size = 10)`
    
-**4. Evaluate the analysis results of SpaHE-Infil using ST**   
+4. Evaluate the analysis results of SpaHE-Infil using ST   
    `source("04.spa-HE evaluate Y-correction.R")`   
    `evaluation_results <- evaluate_spahe_accuracy(st_rds_path = "/path/to/st_data.rds",` 
    `spahe_pred_path = "/path/to/spahe_predictions.RData", output_prefix = "path/to/your/spahe_predictions_directory",`
